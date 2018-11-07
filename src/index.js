@@ -33,6 +33,8 @@ function handleOperator(nextOperator) {
       calculator.firstOperand,
       parseFloat(calculator.displayValue)
     );
+    calculator.displayValue = String(result);
+    calculator.firstOperand = result;
   }
 
   calculator.waitingForSecondOperand = true;
